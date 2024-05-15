@@ -9,5 +9,8 @@ Password: admin123
 Username: staff2
 Password: staff
 
+Desain Figme:
+https://www.figma.com/design/SE7C56UCmuKxvn4QElwIM5/UI-Software-Engineering-Website-kasir?node-id=73%3A409&t=66DmWcKPy0S0J1Gw-1
+
 Prototype Figma:
 https://www.figma.com/proto/SE7C56UCmuKxvn4QElwIM5/UI-Software-Engineering-Website-kasir?node-id=5-745&t=YsctD1MLKdM6C5Ul-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=5%3A745&show-proto-sidebar=1
