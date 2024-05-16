@@ -45,7 +45,7 @@ main#main {
     top: 10px;
     right: 10px;
     z-index: 9999;
-    background-color: #007BFF;
+    background-color: #435ebe;
 }
 
 .text-white {

@@ -9,7 +9,10 @@ Password: admin123
 Username: staff2
 Password: staff
 
-Desain Figme:
+folder my_model untuk offline model. 
+dataset_ML terdiri contoh dataset semestara. kalau mau diubah, ubah d folder login pd const URL
+
+Desain Figma:
 https://www.figma.com/design/SE7C56UCmuKxvn4QElwIM5/UI-Software-Engineering-Website-kasir?node-id=73%3A409&t=66DmWcKPy0S0J1Gw-1
 
 Prototype Figma:
