@@ -16,4 +16,8 @@ Desain Figma:
 https://www.figma.com/design/SE7C56UCmuKxvn4QElwIM5/UI-Software-Engineering-Website-kasir?node-id=73%3A409&t=66DmWcKPy0S0J1Gw-1
 
 Prototype Figma:
+Admin
 https://www.figma.com/proto/SE7C56UCmuKxvn4QElwIM5/UI-Software-Engineering-Website-kasir?node-id=5-745&t=YsctD1MLKdM6C5Ul-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=5%3A745&show-proto-sidebar=1
+
+Staff
+https://www.figma.com/proto/SE7C56UCmuKxvn4QElwIM5/UI-Software-Engineering-Website-kasir?node-id=84-928&t=fX4yk1fDN7nplnCd-1&scaling=scale-down&page-id=84%3A409
