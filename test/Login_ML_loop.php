@@ -134,13 +134,9 @@ main#main {
 
 
     let model, webcam, labelContainer, maxPredictions;
-    let isCameraRunning = false; // Menyimpan status kamera
-    let predictionsCount = {}; // Menyimpan hasil prediksi
 
     // Load the image model and setup the webcam
     async function init() {
-        if (isCameraRunning) return; // Jika kamera sudah berjalan, jangan lakukan apa-apa
-
         const modelURL = URL + "model.json";
         const metadataURL = URL + "metadata.json";
 
@@ -154,11 +150,6 @@ main#main {
         await webcam.setup(); // request access to the webcam
         await webcam.play();
         window.requestAnimationFrame(loop);
-        isCameraRunning = true; // Kamera sedang berjalan
-        predictionsCount = {}; // Reset hasil prediksi
-
-        // Show video container
-        document.getElementById('video-container').style.display = 'block';
 
         // append elements to the DOM
         document.getElementById("webcam-container").appendChild(webcam.canvas);
@@ -169,7 +160,6 @@ main#main {
     }
 
     async function loop() {
-        if (!isCameraRunning) return; // Jika kamera tidak berjalan, keluar dari loop
         webcam.update(); // update the webcam frame
         await predict();
         window.requestAnimationFrame(loop);
@@ -183,50 +173,15 @@ main#main {
             const classPrediction =
                 prediction[i].className + ": " + prediction[i].probability.toFixed(2);
             labelContainer.childNodes[i].innerHTML = classPrediction;
-
-            // Hitung jumlah prediksi
-            if (predictionsCount[prediction[i].className]) {
-                predictionsCount[prediction[i].className]++;
-            } else {
-                predictionsCount[prediction[i].className] = 1;
-            }
         }
     }
 
     // Function to stop the webcam
     function stopWebcam() {
-        if (!isCameraRunning) return; // Jika kamera tidak berjalan, jangan lakukan apa-apa
-        webcam.stop(); // Berhenti dari webcam
-        isCameraRunning = false; // Kamera tidak lagi berjalan
-
-        // Clear webcam container
-        document.getElementById('webcam-container').innerHTML = '';
-
-        // Hide video container
-        document.getElementById('video-container').style.display = 'none';
-
-        // Tampilkan hasil prediksi
-        displayPredictionsCount();
+        webcam.stop();
+        document.getElementById('webcam-container').innerHTML = ''; // Clear webcam container
+        document.getElementById('video-container').style.display = 'none'; // Hide video container
     }
-
-    function displayPredictionsCount() {
-        const resultsContainer = document.getElementById("results-container");
-        resultsContainer.innerHTML = ""; // Clear previous results
-
-        const title = document.createElement("h3");
-        title.innerText = "Hasil Prediksi:";
-        resultsContainer.appendChild(title);
-
-        for (const [className, count] of Object.entries(predictionsCount)) {
-            const resultItem = document.createElement("div");
-            resultItem.innerText = `${className}: ${count}`;
-            resultsContainer.appendChild(resultItem);
-        }
-    }
-
-    // Event listeners for start and stop buttons
-    document.getElementById("start-button").addEventListener("click", init);
-    document.getElementById("stop-button").addEventListener("click", stopWebcam);
     </script>
 
 </body>
