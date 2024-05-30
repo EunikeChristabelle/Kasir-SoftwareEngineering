@@ -13,7 +13,6 @@ folder my_model untuk offline model.
 dataset_ML terdiri contoh dataset semestara. kalau mau diubah, ubah d folder login pd const URL
 
 Link laporan: 
-Ganti link
 https://binusianorg-my.sharepoint.com/personal/eunike_christabelle_binus_ac_id/_layouts/15/guestaccess.aspx?share=EaCd_G-ANdREmtlLJ68NmY0BY3IrkBeKOcQDrZJa5lXIZQ&e=5u4UOC
 
 Link video presentasi:
