@@ -12,6 +12,13 @@ Password: staff
 folder my_model untuk offline model. 
 dataset_ML terdiri contoh dataset semestara. kalau mau diubah, ubah d folder login pd const URL
 
+Link laporan: 
+Ganti link
+https://binusianorg-my.sharepoint.com/personal/eunike_christabelle_binus_ac_id/_layouts/15/guestaccess.aspx?share=EaCd_G-ANdREmtlLJ68NmY0BY3IrkBeKOcQDrZJa5lXIZQ&e=5u4UOC
+
+Link video presentasi:
+
+
 Desain Figma:
 https://www.figma.com/design/SE7C56UCmuKxvn4QElwIM5/UI-Software-Engineering-Website-kasir?node-id=73%3A409&t=66DmWcKPy0S0J1Gw-1
 
