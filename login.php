@@ -45,7 +45,7 @@ main#main {
     top: 10px;
     right: 10px;
     z-index: 9999;
-    background-color: #007BFF;
+    background-color: #ffffff;
 }
 
 .text-white {
@@ -114,7 +114,7 @@ main#main {
         <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"
             id="face-script"></script>
-        <div class="text-white">Face recognition</div>
+        <div class="text-black">Face recognition</div>
         <button type="button" onclick="init()">Start</button>
         <button type="button" onclick="stopWebcam()">Tutup Kamera</button> <!-- Tombol Tutup Kamera -->
         <div id="webcam-container" style="margin-top: 10px;"></div>
